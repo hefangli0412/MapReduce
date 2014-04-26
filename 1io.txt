@@ -1,0 +1,16 @@
+Map() function takes the input as a <Key,value> pair. In this case, it will read a line, extract only the text values of CustomerID.
+The output of Map() function will be the CustomerID and the count value.
+
+Map: <customerID, reviewID> -> List<customerID, 1>
+Example: <CustomerID1, 1>, <CustomerID2, 1>
+
+
+
+
+The Reduce() function will take the output of Map() function where it will collect and count the number of instances of a particular customer id.
+The final output of Reduce() function will be CustomerID and sum values of number of instances of CustomerID.
+
+Reduce: List<customerID, 1> -> <customerID, number of reivew>
+Example: <customerID1, 10>, <customerID2, 1>
+ 
+

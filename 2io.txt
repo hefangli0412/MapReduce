@@ -1,0 +1,16 @@
+Map() function takes the input as a <Key,value> pair. In this case, it will read a line, extract only the text values of CityName, Coordinates of a particular customer.
+It invokes a function to check the distance with the City's coordinate value. After computing euclidean distance, we decide whether to include it in output of Map() function.
+The output of Map() function will be the CustomerID who lies within the given range and the count value being one.
+
+Map: <CustomerID, City> -> List<City, 1>
+Example: <CustomerID1, 1>, <CustomerID2, 1>
+
+
+
+
+
+The Reduce() function will take the output of Map() function where it will collect and count the number of instances of a particular cities.
+The final output of Reduce() function will be City Name and sum values of number of instances of CustomerIDs who are within the 5 mile radius.
+
+Reduce: List<City, 1> -> <City, number of customers>
+Example: <City1, 10>, <City2, 1>
