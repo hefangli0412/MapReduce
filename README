@@ -1,0 +1,12 @@
+MapReduce
+=========
+
+restrictions on Map class -- usage of HashMap and/or JobConfig
+
+Q1 
+ReviewCount.java  solution:LikeReview.java
+1io.txt 1out.txt
+
+Q2
+CityCount.java  solution:People_City.java
+2io.txt 2out.txt
