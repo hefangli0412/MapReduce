@@ -3,6 +3,9 @@ MapReduce
 
 restrictions on Map class -- usage of HashMap and/or JobConfig
 
+We use both local machine(Hortonworks Sandbox http://127.0.0.1:8000/ via VM) and remote cloud(EMR (Elastic Map Reduce), EC2 (Elastic Compute 
+Cloud) and S3 (Simple Storage) services of AWS https://aws.amazon.com/)
+
 Q1 
 ReviewCount.java  solution:LikeReview.java
 1io.txt 1out.txt
@@ -10,3 +13,15 @@ ReviewCount.java  solution:LikeReview.java
 Q2
 CityCount.java  solution:People_City.java
 2io.txt 2out.txt
+
+I tested both versions of Q2. The solution seems to run faster. More readings are needed about Job configuration and distributed cache.
+
+                 large ER2      medium ER2
+CityCount          7m40s          18m29s
+People_City        5m5s           7m13s
+
+Evaluation of scale-out effect(Q2)
+
+                 1 core      2 cores    4 cores
+Q2 large         7m40s       4m13s      3m5s
+Q2 medium        18m29s      10m57s     2m44s
