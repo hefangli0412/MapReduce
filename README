@@ -12,14 +12,6 @@ Q2 involved query
 CityCount.java  solution:People_City.java
 2io.txt 2out.txt
 
-Evaluation of Scale-out Effect
-test Q2 on both local and remote machines
-More readings are needed about Job configuration and distributed cache.
-
-                 large ER2      medium ER2
-CityCount          7m40s          18m29s
-People_City        5m5s           7m13s
-
 Evaluation of scale-out effect(Q2)
 
                  1 core      2 cores    4 cores
